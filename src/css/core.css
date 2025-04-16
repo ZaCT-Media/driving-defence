@@ -13,6 +13,10 @@ p {
   line-height: 1.5;
 }
 
+html{
+  background: #FFF;
+}
+
 :root {
   --dark-bg-1: #252b4b;
   --light-bg: #f7f7f7;
@@ -22,15 +26,27 @@ p {
   --dark-text-1: #1a1a1a;
   --dark-text-2: #4e4b66;
   --subtitle: #707070;
+  
+  --ff-title: "Rubik";
+  --ff-body: "Open Sans";
+  
 }
 
-span,
-a,
-p,
+
 h1,
 h2,
 h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--ff-title);
+}
+
+textarea,
+input,
+label,
+button
+span,
+a,
+p{
+  font-family: var(--ff-body);
 }
 
 ul {
