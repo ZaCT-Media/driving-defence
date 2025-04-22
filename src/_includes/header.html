@@ -1,11 +1,7 @@
-<header>{% set navPages = collections.all | eleventyNavigation %}
+<header>
   <nav>
-    <ul>
-      {%- for entry in navPages %}
-        <li{% if entry.url == page.url %} class="active-nav-link"{% endif %}>
-          <a href="{{ entry.url }}">{{ entry.title }}</a>
-        </li>
-      {%- endfor %}
-    </ul>
+    <div class="wrapper">
+      <a href="/" class="logo">Company Name</a>
+    </div>
   </nav>
 </header>
