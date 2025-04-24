@@ -25,14 +25,16 @@ body {
 
 main {
   flex: 1;
+  background: var(--dark-bg-2);
 }
 
 :root {
-  --dark-bg-1: #262626;
+  --dark-bg-1: #272727;
+  --dark-bg-2: #4a1b77;
   --light-bg: #f7f7f7;
-  --primary: #0b7cad;
+  --primary: #7f9ffc;
   --light-text-1: #fafbfc;
-  --light-text-2: #8f8c8c;
+  --light-text-2: #d2d2d2;
   --dark-text-1: #1a1a1a;
   --dark-text-2: #4e4b66;
   --subtitle: #707070;
@@ -63,6 +65,8 @@ p {
 picture {
   display: block;
   overflow: hidden;
+  margin-inline: auto;
+  
 }
 
 picture img {
@@ -109,11 +113,12 @@ picture img {
     font-weight: 900;
     font-size: 24px;
     text-transform: uppercase;
+    color: var(--light-text-1);
   }
 
   .hero .wrapper .subtitle {
     font-size: 14px;
-    color: var(--subtitle);
+    color: var(--light-text-2);
     font-weight: 400;
     font-style: italic;
   }
@@ -128,7 +133,7 @@ picture img {
     gap: 0.25rem;
     font-size: 14px;
     font-weight: 500;
-    color: var(--dark-text-2);
+    color: var(--light-text-2);
   }
 
   .form-section form label span::after {
@@ -147,7 +152,7 @@ picture img {
     display: inline-block;
     line-height: 2.5rem;
     background: var(--primary);
-    color: var(--light-text-1);
+    color: var(--dark-text-1-text-1);
     border: none;
     border-radius: 1rem;
     margin-top: 0.5rem;
@@ -165,9 +170,9 @@ picture img {
     list-style-type: none; /* remove default bullets */
     position: relative;
     padding-left: 0.75rem;
-    color: var(--dark-text-2);
+    color: var(--light-text-2);
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   li::before {
@@ -177,15 +182,17 @@ picture img {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
-    top: -0.1rem; /* vertical alignment tweak */
-    color: var(--dark-bg-1);
+    color: var(--light-bg-1);
+  }
+  
+  main section:nth-last-child(1) {
+    padding-bottom: 2rem;
   }
 
   footer {
     background: var(--dark-bg-1);
     color: var(--light-text-1);
     padding-block: 1rem;
-    margin-top: 1rem;
     text-align: center;
     font-size: 12px;
   }
@@ -204,7 +211,6 @@ picture img {
   }
 
   .wrapper {
-    max-width: 80%;
     margin-inline: auto;
   }
 
@@ -230,7 +236,6 @@ picture img {
   }
 
   .wrapper {
-    max-width: 60%;
     margin-inline: auto;
   }
 }
