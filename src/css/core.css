@@ -17,6 +17,16 @@ html {
   background: #fff;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 :root {
   --dark-bg-1: #262626;
   --light-bg: #f7f7f7;
@@ -144,6 +154,11 @@ picture img {
     font-weight: 700;
     text-transform: capitalize;
     font-size: 16px;
+    cursor: pointer;
+  }
+
+  .form-section form button:hover {
+    filter: brightness(1.15);
   }
 
   .wrapper ul li {
@@ -177,37 +192,44 @@ picture img {
 }
 
 @media (min-width: 768px) {
-  
-  .hero .wrapper h1{
+  .hero .wrapper h1 {
     font-size: 48px;
     max-width: 20ch;
     margin-inline: auto;
   }
-  
-  .picture-section{
+
+  .picture-section {
     max-width: 60%;
     margin-inline: auto;
   }
-  
-  .wrapper{
+
+  .wrapper {
     max-width: 80%;
     margin-inline: auto;
   }
-  
-  .bullet-section ul li{
+
+  .bullet-section ul li {
     line-height: 1.7;
   }
-  
+
+  form,
+  .bullet-section {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .bullet-section .wrapper {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1024px) {
-  
   section {
     padding-inline: 1rem;
     padding-top: 2rem;
   }
-  
-  .wrapper{
+
+  .wrapper {
     max-width: 60%;
     margin-inline: auto;
   }
