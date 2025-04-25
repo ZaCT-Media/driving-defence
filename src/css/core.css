@@ -11,6 +11,7 @@ a {
 
 p {
   line-height: 1.5;
+  color: var(--light-text-2);
 }
 
 html {
@@ -49,6 +50,7 @@ h4,
 h5,
 h6 {
   font-family: var(--ff);
+  color: var(--light-text-1);
 }
 
 li,
@@ -188,6 +190,18 @@ picture img {
   main section:nth-last-child(1) {
     padding-bottom: 2rem;
   }
+  
+  .about{
+    text-align: center;
+  }
+  
+  .about h2{
+    margin-bottom: 1.5rem;
+  }
+  
+  .about p{
+    margin-bottom: 1rem;
+  }
 
   footer {
     background: var(--dark-bg-1);
@@ -211,6 +225,7 @@ picture img {
   }
 
   .wrapper {
+    max-width: 640px;
     margin-inline: auto;
   }
 
